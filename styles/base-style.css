@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&display=swap');
+
+body {
+    font-family: 'Cinzel', sans-serif;
+    background: url(../images/bg.jpg) no-repeat center center fixed;
+    background-size: cover;
+    font-size: small;
+    color: white;
+}
+
+body * {
+    border-radius: 4px;
+}
+
+a,
+a:hover {
+    color: rgb(252, 248, 248);
+}
+
+a:visited {
+    color: rgb(248, 70, 70);
+}
+
+header,
+main,
+footer {
+    width: 80vw;
+    min-width: 400px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 25px;
+}
+
+header img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20vw;
+    min-width: 400px;
+    height: auto;
+}
+
+#menu {
+    font-size: large;
+    background-color: rgb(49, 49, 47);
+    margin-left: -10px;
+    margin-right: -10px;
+    border-top: 2px solid rgb(164, 160, 131);
+    border-bottom: 2px solid rgb(164, 160, 131);
+    opacity: 0.9;
+}
+
+header nav ul li {
+    display: inline;
+    white-space: nowrap;
+}
+
+header nav a {
+    font-weight: 500;
+    text-decoration: none;
+    font-variant: small-caps;
+    font-size: 1em;
+    margin-right: 1.3em;
+}
+
+header nav a:hover {
+    text-decoration: underline
+}
+
+@media screen and (max-width: 500px) {
+
+    header,
+    main,
+    footer {
+        width: 80vw;
+    }
+
+    body {
+        font-size: medium;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    header,
+    main,
+    footer {
+        width: 95vw;
+    }
+
+    body {
+        font-size: medium;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+    header,
+    main,
+    footer {
+        width: 90vw;
+    }
+
+    body {
+        font-size: medium;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+
+    main,
+    footer {
+        width: 80vw;
+    }
+
+    body {
+        font-size: small;
+    }
+}
+
+main {
+    background: linear-gradient(135deg, rgb(69, 72, 74) 60%, rgb(111, 28, 28));
+    opacity: 0.95;
+    border: 2px solid rgb(164, 160, 131);
+}
+
+main div {
+    padding: 15px;
+}
+
+footer div {
+    font-size: large;
+    color: white;
+    text-align: center;
+}
+
+@media print {
+
+    @page {
+        margin: 2cm;
+    }
+
+    html {
+
+        background: white;
+    }
+
+    header,
+    main,
+    article,
+    footer,
+    figure {
+        margin: 0;
+        padding: 0;
+        width: 100%
+    }
+
+    h1 {
+        text-shadow: none;
+        margin: 0.5cm;
+        transform: rotate(0);
+        font-size: 1cm;
+    }
+
+    h2 {
+        margin: 5px;
+    }
+
+    * {
+        border: none !important;
+        color: black !important;
+
+    }
+
+    body {
+        width: 100%;
+        font-family: 'Times New Roman', Times, serif;
+        background: rgb(0, 0, 0);
+        min-width: initial;
+        max-width: initial;
+        box-shadow: initial;
+        padding: 0;
+        margin: 0;
+    }
+
+    nav {
+        display: none
+    }
+
+    a:after {
+        content: " (" attr(href) ")";
+    }
+
+
+
+    aside {
+        float: right;
+        width: 8cm;
+        margin: 0 0 0 10px;
+    }
+
+
+    figure img {
+        max-width: 10cm
+    }
+
+    video,
+    audio {
+        display: none
+    }
+
+    textarea,
+    legend {
+        display: none
+    }
+
+}

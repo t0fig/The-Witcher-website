@@ -1,0 +1,13 @@
+section * {
+    text-align: center;
+}
+
+table * {
+    color: white;
+}
+
+
+
+table li {
+    list-style-type: none;
+}

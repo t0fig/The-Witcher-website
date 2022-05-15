@@ -1,0 +1,32 @@
+.paragraphs {
+    padding: 10px;
+    border: 2px solid rgb(164, 160, 131);
+    margin: 20px;
+}
+
+#exclamation img {
+    float: left;
+    height: 50px;
+}
+
+#quote {
+    text-align: right;
+}
+
+#fanart img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50vw;
+    min-width: 200;
+    height: auto;
+    border-style: solid;
+}
+
+#fanart div {
+    text-align: center;
+}
+
+figure {
+    text-align: center;
+}

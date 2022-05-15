@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/base-style.css">
+    <link rel="icon" href="images/wolf.png">
+    <title>The Witcher</title>
+
+</head>
+
+<body>
+    <header>
+        <img src="./images/logo.png" alt="logo">
+        <nav id="menu">
+            <div class="header-center">
+                <ul>
+                    <li><a href="./index.html">Homepage</a></li>
+                    <li><a href="./gameplay.html">Gameplay</a></li>
+                    <li><a href="./games.html">The Witcher 1, 2 and 3</a></li>
+                    <li><a href="./series.html">The Witcher series</a></li>
+                    <li><a href="">Proposal form</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <h1>Proposal form</h1>
+        <div class="row border-bottom border-primary border-2">
+            <div class="col-12 p-3">
+                <h2>Send us your suggestions</h2>
+                <p>If you have anything in your mind that can improve our site, please fill that form, thank you!</p>
+            </div>
+        </div>
+        <form action="mailto:tofig.mukhtasanov@gmail.com" method="post" enctype="text/plain">
+            <div class="row">
+
+                <div class="col-12 col-lg-6">
+                    <fieldset class="border rounded bg-dark my-3 p-3">
+                        <legend>What do you suggest?</legend>
+
+                        <label for="title"><strong>Subject</strong></label><br>
+                        <input class="w-100" type="text" name="title" id="title" size="50"><br>
+                        <label for="imdb"><strong>Any referance link for details</strong></label><br>
+                        <input class="w-100" type="url" size="50" name="imdburl" id="imdb"
+                            value="http://www.somereferancelink.com/"><br>
+                        <label for="story"><strong>Suggestion shortly</strong></label><br>
+                        <textarea class="w-100" cols="50" rows="10" name="story" id="story"
+                            placeholder="Only relevant suggestions, please!"></textarea>
+                    </fieldset>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <fieldset class="border rounded bg-dark my-3 p-3">
+                        <legend>Rating</legend>
+                        <p>Your rating of our website in a 1 to 5 scale<br>
+                            <input type="radio" name="rating" id="v1" value="1">
+                            <label for="v1">1 - Awful</label>
+                            <input type="radio" name="rating" id="v2" value="2">
+                            <label for="v2">2</label>
+                            <input type="radio" name="rating" id="v3" value="3">
+                            <label for="v3">3</label>
+                            <input type="radio" name="rating" id="v4" value="4">
+                            <label for="v4">4</label>
+                            <input type="radio" name="rating" id="v5" value="5">
+                            <label for="v5">5 - Excellent</label>
+                        </p>
+
+                    </fieldset>
+
+
+                    <fieldset class="border rounded bg-dark my-3 p-3">
+                        <legend>Personal info</legend>
+                        <label for="name"><strong>Name</strong></label><br>
+                        <input class="w-100" type="text" name="name" id="name" size="50"><br>
+                        <label for="email"><strong>E-mail address</strong></label><br>
+                        <input class="w-100" type="email" name="email" id="email" size="50"><br>
+                        <input type="checkbox" name="newsletter" id="newsletter" value="yes">
+                        <label for="newsletter">I'd like to subscribe to a newsletter</label>
+
+                    </fieldset>
+                    <fieldset class="border rounded bg-dark my-3 p-3">
+                        <legend>Send</legend>
+                        <input type="submit" value="Submit" class="btn btn-primary">
+                        <input type="reset" value="Reset" class="btn btn-danger">
+                    </fieldset>
+                </div>
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <div>By Tofig</div>
+        <div><a href="mailto:tofig.mukhtasanov@gmail.com">e-mail me</a></div>
+    </footer>
+    <script>
+        let b = document.querySelector(".btn")
+        b.addEventListener('click', () => { alert("We will consider your suggestions as soon as possible, thank you!") })
+    </script>
+</body>
+
+</html>
